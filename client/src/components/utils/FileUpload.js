@@ -17,6 +17,10 @@ const DropzoneDiv = styled.div`
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    &:hover {
+        background-color: #e5e5e5;
+        border: 2px solid gray;
+    }
 `;
 
 const ImageFormDiv = styled.div`
@@ -72,7 +76,7 @@ function FileUpload({ refreshFunction }) {
         <DropDiv>
             <Dropzone onDrop={dropHandler}>
                 {({ getRootProps, getInputProps }) => (
-                    <DropzoneDiv {...getRootProps()}>
+                    <DropzoneDiv {...getRootProps()} style={{ cursor: 'pointer' }}>
                         <input {...getInputProps()} />
                         <Icon type="plus" style={{ fontSize: '3rem' }} />
                     </DropzoneDiv>

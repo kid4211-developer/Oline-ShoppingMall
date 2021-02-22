@@ -164,7 +164,7 @@ router.post('/successBuy', auth, (req, res) => {
             dateOfPurchase: new Date(Date.UTC(year, month, today, hours, minutes, seconds)),
             name: item.title,
             id: item._id,
-            price: item.quantity,
+            price: item.price,
             quantity: item.quantity,
             paymentId: req.body.paymentData.paymentId,
         });
