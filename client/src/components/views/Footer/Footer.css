@@ -1,0 +1,74 @@
+/* Common Style */
+.body__container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+a {
+    text-decoration: none; /* 텍스트에 줄을 그어주는 속성, a태그의 밑줄을 없애는데 자주 사용 */
+}
+
+/* Section $ Inner */
+.section {
+    position: relative;
+}
+.section .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box; /* padding or border에 의해 무분별하게 요소가 커지는 것을 방지함 */
+    position: relative;
+}
+
+/* Float Clearfix Style */
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.float--left {
+    float: left;
+}
+.float--right {
+    float: right;
+}
+
+/* Footer Style */
+footer .inner {
+    padding: 30px 0;
+    border-top: 3px solid #eee;
+}
+footer .site-links {
+    display: flex;
+}
+
+footer .site-links li {
+    font-size: 16px;
+    margin-right: 12px;
+    color: #767676;
+}
+
+footer .site-links li a {
+    color: #4078c0;
+}
+
+footer .site-links li a:hover {
+    text-decoration: underline;
+}
+
+footer .logo {
+    position: absolute;
+    /* absolute를 기준으로 전체영역을 다 사용한다는 개념 */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; /* 4방향에 대한 마진을 auto로 설정함으로써 가운데 정렬 */
+    width: 32px;
+    height: 32px;
+}
+
+footer .logo:hover svg {
+    /* logo요소에 마우스를 올리면 svg 속성은 아래와 같이 설정하겠다는 의미 */
+    fill: #4078c0;
+}
