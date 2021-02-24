@@ -1,12 +1,11 @@
 import React from 'react';
 import { ReactComponent as Logo } from './logo.svg';
 import './Footer.css';
-import { Icon } from 'antd';
 
 function Footer1() {
     return (
         <div className="body__container">
-            <footer className="section">
+            <footer className="sections">
                 <div className="inner clearfix">
                     <ul className="site-links float--right" style={{ listStyle: 'none' }}>
                         <li>

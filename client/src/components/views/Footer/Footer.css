@@ -10,10 +10,10 @@ a {
 }
 
 /* Section $ Inner */
-.section {
+.sections {
     position: relative;
 }
-.section .inner {
+.sections .inner {
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box; /* padding or border에 의해 무분별하게 요소가 커지는 것을 방지함 */
