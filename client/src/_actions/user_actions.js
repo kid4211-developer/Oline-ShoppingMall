@@ -8,8 +8,11 @@ import {
     GET_CART_ITEMS,
     REMOVE_CART_ITEM,
     ON_SUCCESS_BUY,
+    ON_SUCCESS_TRANSFER,
+    ADD_TO_ACCOUNT,
+    REMOVE_TO_ACCOUNT,
 } from './types';
-import { USER_SERVER, PRODUCT_SERVER } from '../components/Config.js';
+import { USER_SERVER, PRODUCT_SERVER, ACCOUNT_SERVER } from '../components/Config.js';
 
 export function registerUser(dataToSubmit) {
     const request = axios
@@ -109,6 +112,36 @@ export function onSuccessBuy(data) {
     });
     return {
         type: ON_SUCCESS_BUY,
+        payload: request,
+    };
+}
+
+export function addAccount(accountInfo) {
+    const request = axios.post(`${ACCOUNT_SERVER}/createAccount`, accountInfo).then((response) => {
+        return response.data;
+    });
+    return {
+        type: ADD_TO_ACCOUNT,
+        payload: request,
+    };
+}
+
+export function removeAccount(accounts) {
+    const request = axios.post(`${ACCOUNT_SERVER}/deleteAccount`, accounts).then((response) => {
+        return response.data;
+    });
+    return {
+        type: REMOVE_TO_ACCOUNT,
+        payload: request,
+    };
+}
+
+export function transfer(transferInfo) {
+    const request = axios.post(`${ACCOUNT_SERVER}/transfer`, transferInfo).then((response) => {
+        return response.data;
+    });
+    return {
+        type: ON_SUCCESS_TRANSFER,
         payload: request,
     };
 }

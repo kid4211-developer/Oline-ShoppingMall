@@ -44,7 +44,7 @@ function UploadProductPage({ user, history }) {
     const submitHandler = (e) => {
         e.preventDefault();
         // 유효성 검사
-        if (!Title || !Description || !Price || !Continent || !Images) {
+        if (!ProductTitle || !Description || !Price || !Continent || !Images) {
             return alert('빈칸 항목을 채워 주세요 ~ !');
         }
 

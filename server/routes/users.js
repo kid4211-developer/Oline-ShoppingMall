@@ -21,6 +21,8 @@ router.get('/auth', auth, (req, res) => {
         image: req.user.image,
         cart: req.user.cart,
         history: req.user.history,
+        accounts: req.user.accounts,
+        transfers: req.user.transfers,
     });
 });
 

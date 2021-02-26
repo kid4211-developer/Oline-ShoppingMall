@@ -1,0 +1,35 @@
+.legend {
+    list-style: none;
+    margin-left: 10px;
+}
+.legend li {
+    float: left;
+    margin-right: 15px;
+}
+.legend span {
+    border: 1px solid #ccc;
+    float: left;
+    width: 10px;
+    height: 12px;
+    margin: 2px;
+}
+.legend {
+    position: fixed;
+    top: 62%;
+    left: 10%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+/* your colors */
+.legend .greendot {
+    background-color: #00ff00;
+}
+.legend .yellowdot {
+    background-color: #ffff33;
+}
+.legend .reddot {
+    background-color: #ff3333;
+}
+.legend .blackdot {
+    background-color: #000000;
+}

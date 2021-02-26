@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Typography } from 'antd';
+import { message, Typography } from 'antd';
 import styled from 'styled-components';
 import TextField from '@material-ui/core/TextField';
 import BankSelectModal from './Modal/BankSelectModal';
 import { Button } from 'antd';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
+import { addAccount } from '../../../_actions/user_actions';
 
 const { Title } = Typography;
 const AccountDiv = styled.div`
@@ -16,6 +17,7 @@ const AccountDiv = styled.div`
 `;
 
 function AddAccountPage() {
+    const dispatch = useDispatch();
     const user = useSelector((state) => state.user);
     const [Modal, setModal] = useState(false);
     const [BankName, setBankName] = useState('');
@@ -52,14 +54,23 @@ function AddAccountPage() {
             bank: BankName,
             accountNumber: AccountNumber,
         };
-        axios.post('/api/account/createAccount', variables).then((response) => {
-            if (response.data.success) {
-                contentClear();
+        if (!BankName || !AccountNumber) {
+            return alert('빈칸 항목을 채워 주세요.');
+        }
+
+        dispatch(addAccount(variables)).then((response) => {
+            if (response.payload.success) {
+                console.log('계좌생성 성공');
+                message.success('Created a account successfully');
+                setTimeout(() => {
+                    contentClear();
+                }, 2000);
             } else {
                 alert('계좌 생성을 실패했습니다.');
             }
         });
     };
+
     return (
         <React.Fragment>
             <AccountDiv>
@@ -102,6 +113,7 @@ function AddAccountPage() {
                             label="Account Number"
                             style={{ margin: '0 10px', width: '75%' }}
                             onChange={accountNumberHandler}
+                            value={AccountNumber}
                         />
                     </div>
                 </form>

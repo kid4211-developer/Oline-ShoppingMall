@@ -41,6 +41,14 @@ const userSchema = mongoose.Schema({
     tokenExp: {
         type: Number,
     },
+    accounts: {
+        type: Array,
+        default: [],
+    },
+    transfers: {
+        type: Array,
+        default: [],
+    },
 });
 
 userSchema.pre('save', function (next) {

@@ -7,6 +7,9 @@ import {
     GET_CART_ITEMS,
     REMOVE_CART_ITEM,
     ON_SUCCESS_BUY,
+    ON_SUCCESS_TRANSFER,
+    ADD_TO_ACCOUNT,
+    REMOVE_TO_ACCOUNT,
 } from '../_actions/types';
 
 export default function (state = {}, action) {
@@ -39,7 +42,30 @@ export default function (state = {}, action) {
                 cartDetail: action.payload.cartDetail,
                 userData: { ...state.userData, cart: action.payload.cart },
             };
-
+        case ON_SUCCESS_TRANSFER:
+            return {
+                ...state,
+                userData: {
+                    ...state.userData,
+                    transfers: action.payload.transfers,
+                },
+            };
+        case ADD_TO_ACCOUNT:
+            return {
+                ...state,
+                userData: {
+                    ...state.userData,
+                    accounts: action.payload.accountInfo,
+                },
+            };
+        case REMOVE_TO_ACCOUNT:
+            return {
+                ...state,
+                userData: {
+                    ...state.userData,
+                    accounts: action.payload.accounts,
+                },
+            };
         default:
             return state;
     }
