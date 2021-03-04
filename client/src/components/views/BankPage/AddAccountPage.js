@@ -14,6 +14,7 @@ const AccountDiv = styled.div`
     margin: 2rem auto;
     border: 1px solid #eee;
     background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 `;
 
 function AddAccountPage() {

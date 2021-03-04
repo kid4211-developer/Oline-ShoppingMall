@@ -5,7 +5,7 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 import { Form, Icon, Input, Button, Checkbox, Typography } from 'antd';
 import { useDispatch } from 'react-redux';
-
+import { TextField } from '@material-ui/core';
 const { Title } = Typography;
 
 function LoginPage(props) {
@@ -32,8 +32,8 @@ function LoginPage(props) {
             validationSchema={Yup.object().shape({
                 email: Yup.string().email('Email is invalid').required('Email is required'),
                 password: Yup.string()
-                    .min(6, 'Password must be at least 6 characters')
-                    .required('Password is required'),
+                    .required('Password is required')
+                    .min(6, 'Password must be at least 6 characters'), //.matches(/^[0-9]+$/, 'Must be only digits')
             })}
             onSubmit={(values, { setSubmitting }) => {
                 setTimeout(() => {

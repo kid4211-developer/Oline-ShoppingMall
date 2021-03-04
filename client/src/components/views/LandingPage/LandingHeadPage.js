@@ -35,9 +35,9 @@ function LandingHeadPage() {
                             </li>
                             <li>
                                 <button type="submit" className="btn btn--primary">
-                                    Sign in for Seoul IT
+                                    Sign Up for Seoul IT
                                 </button>
-                                <p className="caption">By clicking "Login for SeoulIT"</p>
+                                <p className="caption">Click the button to register your account</p>
                             </li>
                         </ul>
                     </form>

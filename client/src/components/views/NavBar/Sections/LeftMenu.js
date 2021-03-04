@@ -30,7 +30,7 @@ function LeftMenu(props) {
                     <Menu.Item key="setting:4">
                         <a href="/bank/transfer">Transfer</a>
                     </Menu.Item>
-                    <Menu.Item key="setting:3">
+                    <Menu.Item key="setting:5">
                         <a href="/bank/transaction">Transaction</a>
                     </Menu.Item>
                 </MenuItemGroup>

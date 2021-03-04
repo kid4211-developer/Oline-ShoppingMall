@@ -46,8 +46,8 @@ function App() {
                     <Route exact path="/blog/create" component={Auth(CreatePage, true)} />
                     <Route exact path="/bank" component={Auth(MyAccountPage, true)} />
                     <Route exact path="/bank/create" component={Auth(AddAccountPage, true)} />
-                    <Route exact path="/bank/transaction" component={Auth(TransactionPage, true)} />
                     <Route exact path="/bank/transfer" component={Auth(TransferPage, true)} />
+                    <Route exact path="/bank/transaction" component={Auth(TransactionPage, true)} />
                 </Switch>
             </div>
             {/* <Footer /> */}
