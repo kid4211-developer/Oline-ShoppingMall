@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Online-ShoppingMall/static/css/main.697839eb.chunk.css",
+    "main.js": "/Online-ShoppingMall/static/js/main.e8fa177c.chunk.js",
+    "main.js.map": "/Online-ShoppingMall/static/js/main.e8fa177c.chunk.js.map",
+    "runtime-main.js": "/Online-ShoppingMall/static/js/runtime-main.c31c0489.js",
+    "runtime-main.js.map": "/Online-ShoppingMall/static/js/runtime-main.c31c0489.js.map",
+    "static/css/2.1fcff466.chunk.css": "/Online-ShoppingMall/static/css/2.1fcff466.chunk.css",
+    "static/js/2.45419bed.chunk.js": "/Online-ShoppingMall/static/js/2.45419bed.chunk.js",
+    "static/js/2.45419bed.chunk.js.map": "/Online-ShoppingMall/static/js/2.45419bed.chunk.js.map",
+    "index.html": "/Online-ShoppingMall/index.html",
+    "precache-manifest.e51724d529e3d2c48fe7d0d8e2db3e8d.js": "/Online-ShoppingMall/precache-manifest.e51724d529e3d2c48fe7d0d8e2db3e8d.js",
+    "service-worker.js": "/Online-ShoppingMall/service-worker.js",
+    "static/css/2.1fcff466.chunk.css.map": "/Online-ShoppingMall/static/css/2.1fcff466.chunk.css.map",
+    "static/css/main.697839eb.chunk.css.map": "/Online-ShoppingMall/static/css/main.697839eb.chunk.css.map",
+    "static/js/2.45419bed.chunk.js.LICENSE.txt": "/Online-ShoppingMall/static/js/2.45419bed.chunk.js.LICENSE.txt",
+    "static/media/feature-tile__build.png": "/Online-ShoppingMall/static/media/feature-tile__build.dd51bdba.png",
+    "static/media/feature-tile__platform.png": "/Online-ShoppingMall/static/media/feature-tile__platform.a07dbc72.png",
+    "static/media/feature-tile__projects.png": "/Online-ShoppingMall/static/media/feature-tile__projects.f0b920d6.png",
+    "static/media/feature-tile__work.png": "/Online-ShoppingMall/static/media/feature-tile__work.c1aee001.png",
+    "static/media/LandingHeadPage.css": "/Online-ShoppingMall/static/media/landingPageImg.b28e3e30.jpg",
+    "static/media/logo.ce5e9d2b.svg": "/Online-ShoppingMall/static/media/logo.ce5e9d2b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c31c0489.js",
+    "static/css/2.1fcff466.chunk.css",
+    "static/js/2.45419bed.chunk.js",
+    "static/css/main.697839eb.chunk.css",
+    "static/js/main.e8fa177c.chunk.js"
+  ]
+}
