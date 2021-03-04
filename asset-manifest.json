@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Online-ShoppingMall/static/css/main.697839eb.chunk.css",
-    "main.js": "/Online-ShoppingMall/static/js/main.30035eda.chunk.js",
-    "main.js.map": "/Online-ShoppingMall/static/js/main.30035eda.chunk.js.map",
+    "main.js": "/Online-ShoppingMall/static/js/main.78b22d00.chunk.js",
+    "main.js.map": "/Online-ShoppingMall/static/js/main.78b22d00.chunk.js.map",
     "runtime-main.js": "/Online-ShoppingMall/static/js/runtime-main.c31c0489.js",
     "runtime-main.js.map": "/Online-ShoppingMall/static/js/runtime-main.c31c0489.js.map",
     "static/css/2.1fcff466.chunk.css": "/Online-ShoppingMall/static/css/2.1fcff466.chunk.css",
-    "static/js/2.45419bed.chunk.js": "/Online-ShoppingMall/static/js/2.45419bed.chunk.js",
-    "static/js/2.45419bed.chunk.js.map": "/Online-ShoppingMall/static/js/2.45419bed.chunk.js.map",
+    "static/js/2.bac2d734.chunk.js": "/Online-ShoppingMall/static/js/2.bac2d734.chunk.js",
+    "static/js/2.bac2d734.chunk.js.map": "/Online-ShoppingMall/static/js/2.bac2d734.chunk.js.map",
     "index.html": "/Online-ShoppingMall/index.html",
-    "precache-manifest.abee8e69d62991435c8b8b8567a9144a.js": "/Online-ShoppingMall/precache-manifest.abee8e69d62991435c8b8b8567a9144a.js",
+    "precache-manifest.5cfdb14964c60cfd998c46f8680a421d.js": "/Online-ShoppingMall/precache-manifest.5cfdb14964c60cfd998c46f8680a421d.js",
     "service-worker.js": "/Online-ShoppingMall/service-worker.js",
     "static/css/2.1fcff466.chunk.css.map": "/Online-ShoppingMall/static/css/2.1fcff466.chunk.css.map",
     "static/css/main.697839eb.chunk.css.map": "/Online-ShoppingMall/static/css/main.697839eb.chunk.css.map",
-    "static/js/2.45419bed.chunk.js.LICENSE.txt": "/Online-ShoppingMall/static/js/2.45419bed.chunk.js.LICENSE.txt",
+    "static/js/2.bac2d734.chunk.js.LICENSE.txt": "/Online-ShoppingMall/static/js/2.bac2d734.chunk.js.LICENSE.txt",
     "static/media/feature-tile__build.png": "/Online-ShoppingMall/static/media/feature-tile__build.dd51bdba.png",
     "static/media/feature-tile__platform.png": "/Online-ShoppingMall/static/media/feature-tile__platform.a07dbc72.png",
     "static/media/feature-tile__projects.png": "/Online-ShoppingMall/static/media/feature-tile__projects.f0b920d6.png",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.c31c0489.js",
     "static/css/2.1fcff466.chunk.css",
-    "static/js/2.45419bed.chunk.js",
+    "static/js/2.bac2d734.chunk.js",
     "static/css/main.697839eb.chunk.css",
-    "static/js/main.30035eda.chunk.js"
+    "static/js/main.78b22d00.chunk.js"
   ]
 }
